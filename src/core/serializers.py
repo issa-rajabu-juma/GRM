@@ -109,6 +109,8 @@ class GrieverSerializer(serializers.ModelSerializer):
             'gender',
             'age',
             'mobile_no',
+            'email',
+            'postal_address',
             'street',
             'ward',
             'district',

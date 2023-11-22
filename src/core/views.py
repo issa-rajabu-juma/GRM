@@ -447,7 +447,7 @@ class GrieverDetail(APIView):
         griever = self.get_object(pk)
         serializer_context = {'request': request}
         data = request.data
-        data['user'] = griever.user.id
+        # data['user'] = griever.user.id
         print(data)
 
         serializer = GrieverSerializer(griever, data=data, context=serializer_context)
