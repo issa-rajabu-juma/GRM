@@ -126,6 +126,8 @@ class Griever(models.Model):
     gender = models.CharField(max_length=45, blank=True, null=True)
     age = models.CharField(max_length=45, blank=True, null=True)
     mobile_no = models.CharField(max_length=45, blank=True, null=True)
+    email = models.EmailField(max_length=45, blank=True, null=True)
+    postal_address = models.CharField(max_length=45, blank=True, null=True)
     street = models.CharField(max_length=255, blank=True, null=True)
     ward = models.CharField(max_length=255, blank=True, null=True)
     district = models.CharField(max_length=255, blank=True, null=True)
